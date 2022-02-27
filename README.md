@@ -1,16 +1,13 @@
-# student
+# Student Manager
 
-A new Flutter project.
+This project is perfect for students who want to be organized through a mobile app. Easy access your school data on your smartphone or tablet.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+Features:
+- Grades management
+- Tasks management
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This software is developed using Android Studio and Flutter.
