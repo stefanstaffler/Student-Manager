@@ -1,0 +1,35 @@
+{
+  "@@locale": "en",
+  "title": "Student manager",
+  "@title": {
+    "description": "Title of the application"
+  },
+  "menu_title": "Menu",
+  "@menu_title": {
+    "description": "Menu of the application drawer"
+  },
+  "menu_marks": "Marks",
+  "@menu_marks": {
+    "description": "Name of the marks window"
+  },
+  "menu_tasks": "Tasks",
+  "@menu_tasks": {
+    "description": "Name of the tasks window"
+  },
+  "menu_settings": "Settings",
+  "@menu_settings":{
+    "description": "Name of the settings window"
+  },
+  "back": "Undo",
+  "@back": {
+    "description": "Title of the back button"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Title of the cancel button"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Title of the save button"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "@@locale": "de",
+  "title": "Studentenorganisator",
+  "@title": {
+    "description": "Titel von der Applikation"
+  },
+  "menu_title": "Menü",
+  "@menu_title": {
+    "description": "Seitenmenü von der Applikation"
+  },
+  "menu_marks": "Noten",
+  "@menu_marks": {
+    "description": "Name des Noten Fensters"
+  },
+  "menu_tasks": "Aufgaben",
+  "@menu_tasks": {
+    "description": "Name des Aufgaben Fensters"
+  },
+  "menu_settings": "Einstellungen",
+  "@menu_settings":{
+    "description": "Name des Einstellungen Fensters"
+  },
+  "back": "Zurück",
+  "@back": {
+    "description": "Titel des Zurück Buttons"
+  },
+  "cancel": "Abbrechen",
+  "@cancel": {
+    "description": "Titel des Abbrechen Buttons"
+  },
+  "save": "Speichern",
+  "@save": {
+    "description": "Titel des Speichern Buttons"
+  }
+}
