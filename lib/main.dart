@@ -1,16 +1,29 @@
+
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'constants.dart';
 import 'database.dart';
-import 'generated/l10n.dart';
 import 'mark_detail_view.dart';
 import 'student_manager_drawer.dart';
 import 'task_detail_view.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const StudentManagerApp());
+  await EasyLocalization.ensureInitialized();
+
+  runApp(
+    EasyLocalization(
+      supportedLocales: const [
+        Locale("de"),
+        Locale("en"),
+      ],
+      path: "assets/translations",
+      useOnlyLangCode: true,
+      fallbackLocale: const Locale("en"),
+      child: const StudentManagerApp(),
+    ),
+  );
 }
 
 class StudentManagerApp extends StatefulWidget {
@@ -33,17 +46,13 @@ class _StudentManagerAppState extends State<StudentManagerApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: const Locale("de"),
-      localizationsDelegates: const [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      supportedLocales: S.delegate.supportedLocales,
-      onGenerateTitle: (context) => S().title,
+      locale: context.locale,
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      title: "title".tr(),
       home: Scaffold(
         appBar: AppBar(
-          title: Text(S().title),
+          title: const Text("title").tr(),
         ),
         drawer: StudentManagerDrawer(
           viewChanged: (View value) {

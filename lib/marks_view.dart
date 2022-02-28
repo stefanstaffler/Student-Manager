@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import 'database.dart';
-import 'generated/l10n.dart';
 import 'mark.dart';
 import 'mark_card.dart';
 
@@ -91,10 +91,10 @@ class MarksViewState extends State<MarksView> {
     return Column(
       children: [
         Text(
-          S().menu_marks,
+          "menu_marks",
           style: Theme.of(context).textTheme.headline1,
           textAlign: TextAlign.center,
-        ),
+        ).tr(),
         Expanded(
           child: ListView.builder(
             itemCount: _markList.length,
@@ -109,7 +109,7 @@ class MarksViewState extends State<MarksView> {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                     content: const Text("Mark deleted"),
                     action: SnackBarAction(
-                      label: S().back,
+                      label: "back".tr(),
                       onPressed: () {
                         addMarkAt(markItem, index);
                       },

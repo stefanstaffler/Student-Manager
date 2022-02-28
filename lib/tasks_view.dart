@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import 'database.dart';
-import 'generated/l10n.dart';
 import 'task.dart';
 import 'task_card.dart';
 
@@ -92,10 +92,10 @@ class TasksViewState extends State<TasksView> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          S().menu_tasks,
+          "menu_tasks",
           style: Theme.of(context).textTheme.headline1,
           textAlign: TextAlign.center,
-        ),
+        ).tr(),
         Expanded(
           child: ListView.builder(
             itemCount: _taskList.length,
@@ -110,7 +110,7 @@ class TasksViewState extends State<TasksView> {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                     content: const Text("Task deleted"),
                     action: SnackBarAction(
-                      label: S().back,
+                      label: "back".tr(),
                       onPressed: () {
                         addTaskAt(taskItem, index);
                       },

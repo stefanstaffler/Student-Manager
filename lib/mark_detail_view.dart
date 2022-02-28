@@ -1,8 +1,8 @@
 import 'package:date_time_picker/date_time_picker.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'constants.dart';
-import 'generated/l10n.dart';
 import 'mark.dart';
 
 class MarkDetailView extends StatefulWidget {
@@ -170,7 +170,7 @@ class _MarkDetailViewState extends State<MarkDetailView> {
                                 onPressed: () {
                                   Navigator.pop(context, null);
                                 },
-                                child: Text(S().cancel),
+                                child: const Text("cancel").tr(),
                               ),
                               TextButton(
                                 onPressed: () {
@@ -203,7 +203,7 @@ class _MarkDetailViewState extends State<MarkDetailView> {
                                     }
                                   }
                                 },
-                                child: Text(S().save),
+                                child: const Text("save").tr(),
                               ),
                             ],
                           ),

@@ -1,0 +1,11 @@
+{
+  "title": "Student Manager",
+  "menu_title": "Menu",
+  "menu_marks": "Marks",
+  "menu_tasks": "Tasks",
+  "menu_settings": "Settings",
+  "back": "Undo",
+  "cancel": "Cancel",
+  "save": "Save",
+  "language_hint": "Language"
+}

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import 'constants.dart';
-import 'generated/l10n.dart';
 
 class StudentManagerDrawer extends StatelessWidget {
   const StudentManagerDrawer({Key? key, required this.viewChanged})
@@ -21,20 +21,20 @@ class StudentManagerDrawer extends StatelessWidget {
                 DrawerHeader(
                   child: Center(
                     child: Text(
-                      S().menu_title,
+                      "menu_title",
                       style: Theme.of(context).textTheme.headline1,
-                    ),
+                    ).tr(),
                   ),
                 ),
                 ListTile(
-                  title: Text(S().menu_marks),
+                  title: const Text("menu_marks").tr(),
                   onTap: () {
                     viewChanged(View.marks);
                     Navigator.pop(context);
                   },
                 ),
                 ListTile(
-                  title: Text(S().menu_tasks),
+                  title: const Text("menu_tasks").tr(),
                   onTap: () {
                     viewChanged(View.tasks);
                     Navigator.pop(context);
@@ -44,7 +44,7 @@ class StudentManagerDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text(S().menu_settings),
+            title: const Text("menu_settings").tr(),
             onTap: () {
               viewChanged(View.settings);
               Navigator.pop(context);

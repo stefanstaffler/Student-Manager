@@ -17,8 +17,8 @@ dependencies:
   sqflite: ^2.0.2
   path: ^1.8.0
   path_provider: ^2.0.8
-  intl: ^0.17.0-nullsafety.2
   cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -26,8 +26,6 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 
 flutter:
-  generate: true
   uses-material-design: true
-
-flutter_intl:
-  enabled: true
+  assets:
+    - assets/translations/
