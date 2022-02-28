@@ -11,3 +11,7 @@ Features:
 ---
 
 This software is developed using Android Studio and Flutter.
+
+---
+
+If you want to participate, it's important that you enable the Flutter_Intl plugin in Android Studio because it generates the required translation files.
